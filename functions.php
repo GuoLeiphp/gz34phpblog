@@ -25,8 +25,14 @@ function check_login()
     }
 }
 
-//加载一个静态页
+//后台加载一个静态页
 function view($name)
 {
     include('view/admin/'.$name.'.html');
+}
+
+//前台加载一个静态页
+function template($name)
+{
+    include('view/index/'.$name.'.html');
 }

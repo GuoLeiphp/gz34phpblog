@@ -14,9 +14,9 @@ $account = explode("\n",$account);
 foreach($account as $v)
 {
     //拼出账号的格式
-    $tmp = $username.' '.md5($password);
+    $tmp = trim($username.' '.md5($password));
     //如果账号相同代表成功
-    if($tmp == $v)
+    if($tmp == trim($v))
     {   
         
         
