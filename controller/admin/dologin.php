@@ -24,12 +24,12 @@ foreach($account as $v)
         //把用户名保存到 session 中
         $_SESSION['name'] = $username;
         //提示信息
-        message('登陆成功!','index.php');
+        message('登陆成功!','');
     }
 
 }
 exit;
-message('登录或者密码错误!','index.php?a=login');
+message('登录或者密码错误!','login');
 
 
     
